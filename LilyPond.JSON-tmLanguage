@@ -94,6 +94,11 @@
 			"content":	"Lilypond slur"
 		},
 		{
+			"match":	"[|]",
+			"name":		"entity.other.inherited-class.python",
+			"content":	"Lilypond slur"
+		},
+		{
 			"match":	"\\\\[()]",
 			"name":		"constant.language.slur.lilypond",
 			"content":	"Lilypond backslash slur"
@@ -102,15 +107,6 @@
 			"match":	"\\\\[<!>\\\\]",
 			"name":		"constant.language.special.lilypond",
 			"content":	"Lilypond special character"
-		},
-		{
-			"begin":	"(#(?=.*#\\())",
-			"end":		".(?=#\\()",
-			"name":		"meta.schemepreparen.lilypond",
-			"patterns":	[
-							{"include": "#scheme"},
-							{"include": "source.lisp"}
-						]
 		},
 		{
 			"name":		"meta.scheme.lilypond",
@@ -132,8 +128,8 @@
 		},
 		{
 			"begin":	"#",
-			"end":		"\\n",
-			"name":		"meta.schemeoneliner.lilypond",
+			"end":		"\\s",
+			"name":		"meta.schemenonrec.lilypond",
 			"patterns":	[
 							{"include": "#scheme"},
 							{"include": "source.lisp"}

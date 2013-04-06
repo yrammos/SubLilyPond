@@ -208,6 +208,14 @@
 		</dict>
 		<dict>
 			<key>content</key>
+			<string>Lilypond slur</string>
+			<key>match</key>
+			<string>[|]</string>
+			<key>name</key>
+			<string>entity.other.inherited-class.python</string>
+		</dict>
+		<dict>
+			<key>content</key>
 			<string>Lilypond backslash slur</string>
 			<key>match</key>
 			<string>\\[()]</string>
@@ -221,25 +229,6 @@
 			<string>\\[&lt;!&gt;\\]</string>
 			<key>name</key>
 			<string>constant.language.special.lilypond</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(#(?=.*#\())</string>
-			<key>end</key>
-			<string>.(?=#\()</string>
-			<key>name</key>
-			<string>meta.schemepreparen.lilypond</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#scheme</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lisp</string>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -283,9 +272,9 @@
 			<key>begin</key>
 			<string>#</string>
 			<key>end</key>
-			<string>\n</string>
+			<string>\s</string>
 			<key>name</key>
-			<string>meta.schemeoneliner.lilypond</string>
+			<string>meta.schemenonrec.lilypond</string>
 			<key>patterns</key>
 			<array>
 				<dict>
