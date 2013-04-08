@@ -7,7 +7,7 @@ This project aims at providing comprehensive and consistent syntax highlighting 
 
 Future versions may include a LilyPond build engine and snippets/autcompletions. Feel free to contact me for feedback, bug reports, and feature suggestions.
 
-Music scholars seeking a complete typesetting solution may be interested in [LyTeXTools](www.github.com/yrammos/lytextools), my LilyPond-enabled fork of [Marciano Siniscalchi’s](http://tekonomist.wordpress.com/) [LaTeXTools](http://github.com/SublimeText/LaTeXTools) package.
+Music scholars seeking a complete typesetting solution may be interested in [LyTeXTools](https://www.github.com/yrammos/LyTeXTools), my LilyPond-enabled fork of [Marciano Siniscalchi’s](http://tekonomist.wordpress.com/) [LaTeXTools](http://github.com/SublimeText/LaTeXTools) package.
 
 ## Installing SubLilyPond
 
