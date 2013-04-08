@@ -31,6 +31,6 @@ Since no Scheme syntax definition is currently available for Sublime Text 2, Sub
 
 ## Acknowledgement
 
-The list of keywords used in SubLilyPond was extracted from [Heikki Junes's](mailto:hjunes@cc.hut.fi) syntax file for vim, which is [bundled](http://lilypond.org/doc/v2.12/Documentation/user/lilypond-program/Vim-mode) with LilyPond.
+The list of keywords used in SubLilyPond was extracted from Heikki Junes's syntax definition for vim, which comes [bundled](http://lilypond.org/doc/v2.12/Documentation/user/lilypond-program/Vim-mode) with LilyPond.
 
 Copyright © 2013 by [Yannis Rammos](twitter.com/yannisrammos). This work is made available under the terms of the Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) license, <http://creativecommons.org/licenses/by-sa/3.0/>.
