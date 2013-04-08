@@ -11,7 +11,7 @@ Music scholars seeking a complete typesetting solution may be interested in [LyT
 
 ## Installing SubLilyPond
 
-The package should soon be available via [Will Bond's](http://wbond.net/) superb [Package Control](http://wbond.net/sublime_packages/package_control/package_developers). In the meantime, you may clone (or copy the contents of) this repository into your Sublime Text `Packages` folder:
+SubLilyPond should soon be available via [Will Bond's](http://wbond.net/) superb [Package Control](http://wbond.net/sublime_packages/package_control/package_developers). In the meantime, you may clone (or copy the contents of) this repository into your Sublime Text `Packages` folder:
 
     git clone http://github.com/yrammos/SubLilyPond.git
 
