@@ -23,7 +23,7 @@ SubLilyPond is a LilyPond _syntax definition_, not a color scheme. It enables Su
 
 ## Tweaking SubLilyPond
 
-You may easily optimize SubLilyPond for use with your favorite color scheme by tweaking the scope names of the syntax definition. See [this](http://manual.macromates.com/en/language_grammars) if you really insist on doing this.
+You may easily optimize SubLilyPond for use with your favorite color scheme by tweaking the scope names of the syntax definition. See [this](http://manual.macromates.com/en/language_grammars) if you really insist on doing so.
 
 ## Scheme code embedded in LilyPond
 
