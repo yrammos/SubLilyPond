@@ -1,9 +1,9 @@
-# SubLilyPond: LilyPond syntax highlighting in Sublime Text 2 and 3
+# SubLilyPond: LilyPond syntax highlighting in Sublime Text
 by [Yannis Rammos](www.twitter.com/yannisrammos)
 
 ## Description
 
-This project aims at providing comprehensive and consistent syntax highlighting of [GNU Lilypond](http://lilypond.org) code in [Sublime Text](http://www.sublimetext.com).
+This project aims at providing comprehensive and consistent syntax highlighting of [GNU Lilypond](http://lilypond.org) code in [Sublime Text 2 and 3](http://www.sublimetext.com).
 
 Future versions may include a LilyPond build engine and snippets/autcompletions. Feel free to contact me for feedback, bug reports, and feature suggestions.
 
