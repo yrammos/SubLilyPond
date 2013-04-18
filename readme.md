@@ -1,9 +1,9 @@
-# SubLilyPond: LilyPond syntax highlighting in Sublime Text 2
+# SubLilyPond: LilyPond syntax highlighting in Sublime Text 2 and 3
 by [Yannis Rammos](www.twitter.com/yannisrammos)
 
 ## Description
 
-This project aims at providing comprehensive and consistent syntax highlighting of [GNU Lilypond](http://lilypond.org) code in [Sublime Text 2](http://www.sublimetext.com).
+This project aims at providing comprehensive and consistent syntax highlighting of [GNU Lilypond](http://lilypond.org) code in [Sublime Text](http://www.sublimetext.com).
 
 Future versions may include a LilyPond build engine and snippets/autcompletions. Feel free to contact me for feedback, bug reports, and feature suggestions.
 
@@ -27,7 +27,7 @@ You may easily optimize SubLilyPond for use with your favorite color scheme by t
 
 ## Scheme code embedded in LilyPond
 
-Since no Scheme syntax definition is currently available for Sublime Text 2, SubLilyPond parses embedded Scheme code using the Lisp syntax definition. Scheme is a Lisp dialect, of course, and this workaround has caused no glitches so far.
+Since no Scheme syntax definition is currently available for Sublime Text 2 or 3, SubLilyPond parses embedded Scheme code using the Lisp syntax definition. Scheme is a Lisp dialect, of course, and this workaround has caused no glitches so far.
 
 ## Acknowledgement
 
