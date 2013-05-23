@@ -51,7 +51,7 @@
 				</dict>
 			</dict>
 			<key>content</key>
-			<string>LilyPond chord delimiter</string>
+			<string>LilyPond note value</string>
 			<key>match</key>
 			<string>&lt;(?!&lt;)|(?&lt;!\\)&gt;(?!&gt;)(((128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)[.]{0,8})?)</string>
 			<key>name</key>
@@ -75,9 +75,9 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;!\\)"</string>
+			<string>(?&lt;!\\)(([_^-]\s*)?")</string>
 			<key>end</key>
-			<string>(?&lt;!\\)"</string>
+			<string>(?&lt;!\\)(")</string>
 			<key>name</key>
 			<string>string.quoted.lilypond</string>
 		</dict>
@@ -91,9 +91,9 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond square bracket</string>
+			<string>LilyPond manual beam</string>
 			<key>match</key>
-			<string>\[|\]</string>
+			<string>([_^]\s*)?\[|\]</string>
 			<key>name</key>
 			<string>constant.language.slur.lilypond</string>
 		</dict>
@@ -147,9 +147,17 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond tie</string>
+			<string>Melisma</string>
 			<key>match</key>
-			<string>[(~)]</string>
+			<string>(_\s)+</string>
+			<key>name</key>
+			<string>constant.language.articulation.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond tie or slur</string>
+			<key>match</key>
+			<string>([_^]\s*)?\(|[_^]?~|\)</string>
 			<key>name</key>
 			<string>constant.language.slur.lilypond</string>
 		</dict>
@@ -157,9 +165,9 @@
 			<key>content</key>
 			<string>LilyPond phrasing slur</string>
 			<key>match</key>
-			<string>\\[()]</string>
+			<string>([_^]\s*)?\\\(|\\\)</string>
 			<key>name</key>
-			<string>constant.language.slur.lilypond</string>
+			<string>constant.language.slur.lilyponddd</string>
 		</dict>
 		<dict>
 			<key>content</key>
@@ -171,7 +179,7 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond special character</string>
+			<string>LilyPond hairpin</string>
 			<key>match</key>
 			<string>\\[&lt;!&gt;]</string>
 			<key>name</key>
