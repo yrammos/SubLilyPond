@@ -20,7 +20,7 @@ SubLilyPond is distributed via [Will Bond's](http://wbond.net/) superb [Package 
 
 ### Color schemes
 
-SubLilyPond is a LilyPond _syntax definition_, not a color scheme. It enables Sublime Text to distinguish the various syntactical elements in the LilyPond code, yet the particular color assigned to each element is defined elsewhere, in the active _color scheme_. A wide range of schemes is freely available, for example via Package Control. Not all schemes provide the highest level of visual differentiation, so you may need to test several. Out of the box, SubLilyPond is fine-tuned for use with the popular [Tomorrow Night](https://github.com/chriskempson/tomorrow-theme/tree/master/textmate) scheme, also available via Package Control.
+SubLilyPond is a LilyPond _syntax definition_, not a color scheme. It enables Sublime Text to distinguish the various syntactical elements in the LilyPond code, yet the particular color assigned to each element is defined elsewhere, in the active _color scheme_. A wide range of schemes is freely available, for example via Package Control. Not all schemes provide the highest level of visual differentiation, so you may need to test several.
 
 ![Screenshot](https://raw.github.com/yrammos/SubLilyPond/master/SubLilyPond.png)
 
