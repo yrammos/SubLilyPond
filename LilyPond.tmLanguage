@@ -42,20 +42,12 @@
 			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.note.lilypond</string>
-				</dict>
-			</dict>
 			<key>content</key>
 			<string>LilyPond note value</string>
 			<key>match</key>
 			<string>&lt;(?!&lt;)|(?&lt;!\\)&gt;(?!&gt;)(((128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)[.]{0,8})?)</string>
 			<key>name</key>
-			<string>keyword.operator.notevalue.lilypond</string>
+			<string>keyword.operator.chord.lilypond</string>
 		</dict>
 		<dict>
 			<key>begin</key>

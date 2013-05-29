@@ -16,11 +16,8 @@
         },
         {
             "match":        "<(?!<)|(?<!\\\\)>(?!>)(((128|64|32|16|8|4|2|1|\\\\breve|\\\\longa|\\\\maxima)[.]{0,8})?)",
-            "name":         "keyword.operator.notevalue.lilypond",
-            "captures":     {
-                                "1":    {"name": "keyword.note.lilypond"}                           
-                            },
-            "content":      "LilyPond note value"
+            "name":         "keyword.operator.chord.lilypond",
+            "content":      "LilyPond chord"
         },
         {
             "name":     "comment.block.lilypond",
