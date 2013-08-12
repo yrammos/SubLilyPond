@@ -43,9 +43,9 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond note value</string>
+			<string>LilyPond chord</string>
 			<key>match</key>
-			<string>&lt;(?!&lt;)|(?&lt;!\\)&gt;(?!&gt;)(((128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)[.]{0,8})?)</string>
+			<string>&lt;(?!&lt;)|(?&lt;!\\)&gt;(?!&gt;)(((128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)[.]{0,8}((\*\d+(\/\d+)?)+)?)?)</string>
 			<key>name</key>
 			<string>keyword.operator.chord.lilypond</string>
 		</dict>
@@ -77,7 +77,7 @@
 			<key>content</key>
 			<string>LilyPond note</string>
 			<key>match</key>
-			<string>\b(((solx|soltcs|soltcb|solstqt|solss|solsqt|solsd|solsb|sols|solkk|solk|soldsd|soldd|sold|solcs|solcb|solbtqt|solbsb|solbqt|solbb|solb|sol|six|sitcs|sitcb|sistqt|siss|sisqt|sisd|sisb|sis|sikk|sik|sidsd|sidd|sid|sics|sicb|sibtqt|sibsb|sibqt|sibb|sib|si|rex|retcs|retcb|restqt|ress|resqt|resd|resb|res|rekk|rek|redsd|redd|red|recs|recb|rebtqt|rebsb|rebqt|rebb|reb|re|mix|mitcs|mitcb|mistqt|miss|misqt|misd|misb|mis|mikk|mik|midsd|midd|mid|mics|micb|mibtqt|mibsb|mibqt|mibb|mib|mi|lax|latcs|latcb|lastqt|lass|lasqt|lasd|lasb|las|lakk|lak|ladsd|ladd|lad|lacs|lacb|labtqt|labsb|labqt|labb|lab|la|hississ|hiss|hisis|hisih|his|hih|hessess|heses|heseh|h|gx|gtqs|gtqf|gss|gsharpsharp|gsharp|gs|gqs|gqf|gississ|giss|gisis|gisih|gis|gih|gflatflat|gflat|gff|gf|gessess|gess|geses|geseh|ges|geh|g|fx|ftqs|ftqf|fss|fsharpsharp|fsharp|fs|fqs|fqf|fississ|fiss|fisis|fisih|fis|fih|fflatflat|fflat|fff|ff|fessess|fess|feses|feseh|fes|feh|fax|fatcs|fatcb|fastqt|fass|fasqt|fasd|fasb|fas|fakk|fak|fadsd|fadd|fad|facs|facb|fabtqt|fabsb|fabqt|fabb|fab|fa|(?&lt;!#)f|ex|etqs|etqf|essess|ess|esharpsharp|esharp|eses|eseh|es|eqs|eqf|eississ|eiss|eisis|eisih|eis|eih|eflatflat|eflat|eff|ef|eessess|eess|eeses|eeseh|ees|eeh|e|dx|dtqs|dtqf|dss|dsharpsharp|dsharp|ds|dqs|dqf|dox|dotcs|dotcb|dostqt|doss|dosqt|dosd|dosb|dos|dokk|dok|dodsd|dodd|dod|docs|docb|dobtqt|dobsb|dobqt|dobb|dob|do|dississ|diss|disis|disih|dis|dih|dflatflat|dflat|dff|df|dessess|dess|deses|deseh|des|deh|d|cx|ctqs|ctqf|css|csharpsharp|csharp|cs|cqs|cqf|cississ|ciss|cisis|cisih|cis|cih|cflatflat|cflat|cff|cf|cessess|cess|ceses|ceseh|ces|ceh|c|bx|btqs|btqf|bss|bsharpsharp|bsharp|bs|bqs|bqf|bisis|bisih|bis|bih|bflatflat|bflat|bff|bf|bess|beses|beseh|bes|beh|bb|b|ax|atqs|atqf|assess|ass|asharpsharp|asharp|ases|aseh|asas|asah|as|aqs|aqf|aississ|aiss|aisis|aisih|ais|aih|aflatflat|aflat|aff|af|aessess|aess|aeses|aeseh|aes|aeh|a|a)[=]?[,']{0,4}[?!]?)|s|r|R|q)(?![A-Za-z])((128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)[.]{0,8})?</string>
+			<string>\b(((solx|soltcs|soltcb|solstqt|solss|solsqt|solsd|solsb|sols|solkk|solk|soldsd|soldd|sold|solcs|solcb|solbtqt|solbsb|solbqt|solbb|solb|sol|six|sitcs|sitcb|sistqt|siss|sisqt|sisd|sisb|sis|sikk|sik|sidsd|sidd|sid|sics|sicb|sibtqt|sibsb|sibqt|sibb|sib|si|rex|retcs|retcb|restqt|ress|resqt|resd|resb|res|rekk|rek|redsd|redd|red|recs|recb|rebtqt|rebsb|rebqt|rebb|reb|re|mix|mitcs|mitcb|mistqt|miss|misqt|misd|misb|mis|mikk|mik|midsd|midd|mid|mics|micb|mibtqt|mibsb|mibqt|mibb|mib|mi|lax|latcs|latcb|lastqt|lass|lasqt|lasd|lasb|las|lakk|lak|ladsd|ladd|lad|lacs|lacb|labtqt|labsb|labqt|labb|lab|la|hississ|hiss|hisis|hisih|his|hih|hessess|heses|heseh|h|gx|gtqs|gtqf|gss|gsharpsharp|gsharp|gs|gqs|gqf|gississ|giss|gisis|gisih|gis|gih|gflatflat|gflat|gff|gf|gessess|gess|geses|geseh|ges|geh|g|fx|ftqs|ftqf|fss|fsharpsharp|fsharp|fs|fqs|fqf|fississ|fiss|fisis|fisih|fis|fih|fflatflat|fflat|fff|ff|fessess|fess|feses|feseh|fes|feh|fax|fatcs|fatcb|fastqt|fass|fasqt|fasd|fasb|fas|fakk|fak|fadsd|fadd|fad|facs|facb|fabtqt|fabsb|fabqt|fabb|fab|fa|(?&lt;!#)f|ex|etqs|etqf|essess|ess|esharpsharp|esharp|eses|eseh|es|eqs|eqf|eississ|eiss|eisis|eisih|eis|eih|eflatflat|eflat|eff|ef|eessess|eess|eeses|eeseh|ees|eeh|e|dx|dtqs|dtqf|dss|dsharpsharp|dsharp|ds|dqs|dqf|dox|dotcs|dotcb|dostqt|doss|dosqt|dosd|dosb|dos|dokk|dok|dodsd|dodd|dod|docs|docb|dobtqt|dobsb|dobqt|dobb|dob|do|dississ|diss|disis|disih|dis|dih|dflatflat|dflat|dff|df|dessess|dess|deses|deseh|des|deh|d|cx|ctqs|ctqf|css|csharpsharp|csharp|cs|cqs|cqf|cississ|ciss|cisis|cisih|cis|cih|cflatflat|cflat|cff|cf|cessess|cess|ceses|ceseh|ces|ceh|c|bx|btqs|btqf|bss|bsharpsharp|bsharp|bs|bqs|bqf|bisis|bisih|bis|bih|bflatflat|bflat|bff|bf|bess|beses|beseh|bes|beh|bb|b|ax|atqs|atqf|assess|ass|asharpsharp|asharp|ases|aseh|asas|asah|as|aqs|aqf|aississ|aiss|aisis|aisih|ais|aih|aflatflat|aflat|aff|af|aessess|aess|aeses|aeseh|aes|aeh|a|a)[=]?[,']{0,4}[?!]?)|s|r|R|q)(?![A-Za-z])((128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)[.]{0,8}((\*\d+(\/\d+)?)+)?)?</string>
 			<key>name</key>
 			<string>keyword.note.lilypond</string>
 		</dict>
@@ -133,7 +133,7 @@
 			<key>content</key>
 			<string>LilyPond number</string>
 			<key>match</key>
-			<string>[-_+^.]?\d+[.]?</string>
+			<string>[-_+^.]?\d+[.]?((\*\d+(\/\d+)?)+)?</string>
 			<key>name</key>
 			<string>storage.type.number.lilypond</string>
 		</dict>
