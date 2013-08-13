@@ -74,11 +74,15 @@
             "name":     "storage.type.timesig.lilypond",
             "content":  "LilyPond time signature"
         },
-        
+        {
+            "match":    "\\d+\\s*=\\s*\\d+(\\s*~\\s*\\d+)?",
+            "name":     "storage.type.tempo.lilypond",
+            "content":  "LilyPond tempo or tempo range"
+        },
         {
             "match":    "[-_+^.]?\\d+[.]?((\\*\\d+(\\/\\d+)?)+)?",
             "name":     "storage.type.number.lilypond",
-            "content":  "LilyPond number or duration"
+            "content":  "LilyPond number or scaled duration expression"
         },
         {
             "match":    "(_\\s)+",

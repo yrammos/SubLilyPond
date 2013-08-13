@@ -133,13 +133,21 @@
 			<key>content</key>
 			<string>LilyPond time signature</string>
 			<key>match</key>
-			<string>[-_+^.]?\d+\/\d+</string>
+			<string>\d+\/\d+</string>
 			<key>name</key>
 			<string>storage.type.timesig.lilypond</string>
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond number or duration</string>
+			<string>LilyPond tempo range</string>
+			<key>match</key>
+			<string>\d+\s*=\s*\d+(\s*~\s*\d+)?</string>
+			<key>name</key>
+			<string>storage.type.temporange.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond number or scaled duration expression</string>
 			<key>match</key>
 			<string>[-_+^.]?\d+[.]?((\*\d+(\/\d+)?)+)?</string>
 			<key>name</key>
