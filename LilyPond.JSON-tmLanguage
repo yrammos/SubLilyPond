@@ -75,7 +75,7 @@
             "content":  "LilyPond time signature"
         },
         {
-            "match":    "\\d+\\s*=\\s*\\d+(\\s*~\\s*\\d+)?",
+            "match":    "\\d+[.]{0,8}\\s*=\\s*\\d+(\\s*~\\s*\\d+)?",
             "name":     "storage.type.tempo.lilypond",
             "content":  "LilyPond tempo or tempo range"
         },

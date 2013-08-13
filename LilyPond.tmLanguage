@@ -139,11 +139,11 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond tempo range</string>
+			<string>LilyPond tempo or tempo range</string>
 			<key>match</key>
-			<string>\d+\s*=\s*\d+(\s*~\s*\d+)?</string>
+			<string>\d+[.]{0,8}\s*=\s*\d+(\s*~\s*\d+)?</string>
 			<key>name</key>
-			<string>storage.type.temporange.lilypond</string>
+			<string>storage.type.tempo.lilypond</string>
 		</dict>
 		<dict>
 			<key>content</key>
