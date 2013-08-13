@@ -70,9 +70,15 @@
             "content":  "Lilypond reserved word"
         },
         {
+            "match":    "\\d+\\/\\d+",
+            "name":     "storage.type.timesig.lilypond",
+            "content":  "LilyPond time signature"
+        },
+        
+        {
             "match":    "[-_+^.]?\\d+[.]?((\\*\\d+(\\/\\d+)?)+)?",
             "name":     "storage.type.number.lilypond",
-            "content":  "LilyPond number"
+            "content":  "LilyPond number or duration"
         },
         {
             "match":    "(_\\s)+",

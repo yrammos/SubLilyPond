@@ -131,7 +131,15 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond number</string>
+			<string>LilyPond time signature</string>
+			<key>match</key>
+			<string>[-_+^.]?\d+\/\d+</string>
+			<key>name</key>
+			<string>storage.type.timesig.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond number or duration</string>
 			<key>match</key>
 			<string>[-_+^.]?\d+[.]?((\*\d+(\/\d+)?)+)?</string>
 			<key>name</key>
