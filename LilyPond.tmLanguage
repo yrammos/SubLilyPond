@@ -179,6 +179,14 @@
 		</dict>
 		<dict>
 			<key>content</key>
+			<string>LilyPond ligature</string>
+			<key>match</key>
+			<string>([_^-]\s*)?\\\[|\\\]</string>
+			<key>name</key>
+			<string>support.constant.ligature.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
 			<string>LilyPond bar line</string>
 			<key>match</key>
 			<string>[|]</string>

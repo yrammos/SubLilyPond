@@ -100,6 +100,11 @@
             "content":  "LilyPond phrasing slur"
         },
         {
+            "match":    "([_^-]\\s*)?\\\\\\[|\\\\\\]",
+            "name":     "support.constant.ligature.lilypond",
+            "content":  "LilyPond ligature"
+        },
+        {
             "match":    "[|]",
             "name":     "support.type.barline.lilypond",
             "content":  "LilyPond bar line"
