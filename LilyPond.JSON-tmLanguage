@@ -61,7 +61,7 @@
         },
         {
             "match":    "[-_^][-_^+|>.]",
-            "name":     "entity.name.module.articulation.lilypond",
+            "name":     "string.interpolated.lilypond",
             "content":  "LilyPond articulation mark; must be kept before the Lilypond keyword rule"
         },
         {
