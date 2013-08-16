@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>LilyPond note mode</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>content</key>
+			<string>LilyPond tempo or tempo range</string>
+			<key>match</key>
+			<string>(128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)(\s*[.]\s*)*=\s*\d+(\s*~\s*\d+)?</string>
+			<key>name</key>
+			<string>storage.type.tempo.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond chord</string>
+			<key>match</key>
+			<string>&lt;(?!&lt;)|(?&lt;!\\)&gt;(?!&gt;)(\s*(128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)(\s*[.]\s*)*((\s*\*\s*\d+(\/\d+)?)+)?)?</string>
+			<key>name</key>
+			<string>keyword.operator.chord.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond note or chord abbreviation</string>
+			<key>match</key>
+			<string>\b((((solx|soltcs|soltcb|solstqt|solss|solsqt|solsd|solsb|sols|solkk|solk|soldsd|soldd|sold|solcs|solcb|solbtqt|solbsb|solbqt|solbb|solb|sol|six|sitcs|sitcb|sistqt|siss|sisqt|sisd|sisb|sis|sikk|sik|sidsd|sidd|sid|sics|sicb|sibtqt|sibsb|sibqt|sibb|sib|si|rex|retcs|retcb|restqt|ress|resqt|resd|resb|res|rekk|rek|redsd|redd|red|recs|recb|rebtqt|rebsb|rebqt|rebb|reb|re|mix|mitcs|mitcb|mistqt|miss|misqt|misd|misb|mis|mikk|mik|midsd|midd|mid|mics|micb|mibtqt|mibsb|mibqt|mibb|mib|mi|lax|latcs|latcb|lastqt|lass|lasqt|lasd|lasb|las|lakk|lak|ladsd|ladd|lad|lacs|lacb|labtqt|labsb|labqt|labb|lab|la|hississ|hiss|hisis|hisih|his|hih|hessess|heses|heseh|h|gx|gtqs|gtqf|gss|gsharpsharp|gsharp|gs|gqs|gqf|gississ|giss|gisis|gisih|gis|gih|gflatflat|gflat|gff|gf|gessess|gess|geses|geseh|ges|geh|g|fx|ftqs|ftqf|fss|fsharpsharp|fsharp|fs|fqs|fqf|fississ|fiss|fisis|fisih|fis|fih|fflatflat|fflat|fff|ff|fessess|fess|feses|feseh|fes|feh|fax|fatcs|fatcb|fastqt|fass|fasqt|fasd|fasb|fas|fakk|fak|fadsd|fadd|fad|facs|facb|fabtqt|fabsb|fabqt|fabb|fab|fa|(?&lt;!#)f|ex|etqs|etqf|essess|ess|esharpsharp|esharp|eses|eseh|es|eqs|eqf|eississ|eiss|eisis|eisih|eis|eih|eflatflat|eflat|eff|ef|eessess|eess|eeses|eeseh|ees|eeh|e|dx|dtqs|dtqf|dss|dsharpsharp|dsharp|ds|dqs|dqf|dox|dotcs|dotcb|dostqt|doss|dosqt|dosd|dosb|dos|dokk|dok|dodsd|dodd|dod|docs|docb|dobtqt|dobsb|dobqt|dobb|dob|do|dississ|diss|disis|disih|dis|dih|dflatflat|dflat|dff|df|dessess|dess|deses|deseh|des|deh|d|cx|ctqs|ctqf|css|csharpsharp|csharp|cs|cqs|cqf|cississ|ciss|cisis|cisih|cis|cih|cflatflat|cflat|cff|cf|cessess|cess|ceses|ceseh|ces|ceh|c|bx|btqs|btqf|bss|bsharpsharp|bsharp|bs|bqs|bqf|bisis|bisih|bis|bih|bflatflat|bflat|bff|bf|bess|beses|beseh|bes|beh|bb|b|ax|atqs|atqf|assess|ass|asharpsharp|asharp|ases|aseh|asas|asah|as|aqs|aqf|aississ|aiss|aisis|aisih|ais|aih|aflatflat|aflat|aff|af|aessess|aess|aeses|aeseh|aes|aeh|a|a)(\s*[=]?\s*(([,]\s*)|([']\s*)){0,4}\s*[?!]?)?)|s|r|R|q)(?![A-Za-z])(\s*(128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)(\s*[.]\s*)*((\s*\*\s*\d+(\/\d+)?)+)?)?(\s*[:](\s*(aug7|aug|dim|maj7|maj9|maj11|maj|m7\.5-|m7\+|m11|m9|m7|m6|m5|m|dim7|13\.11|13[-+]?|6[-+]?|9[-+]?|11[-+]?|sus2|sus4|sus|1[-+]?\.5[-+]?|1[-+]?\.5[-+]?\.8[-+]?|\d*[-+]?)((\s*[.]?\s*\d+[-+]?)|[-+])*)?)?(\s*\^\s*\d+(\s*\.\s*\d+)*)?(\s*/[\+]?\s*(solx|soltcs|soltcb|solstqt|solss|solsqt|solsd|solsb|sols|solkk|solk|soldsd|soldd|sold|solcs|solcb|solbtqt|solbsb|solbqt|solbb|solb|sol|six|sitcs|sitcb|sistqt|siss|sisqt|sisd|sisb|sis|sikk|sik|sidsd|sidd|sid|sics|sicb|sibtqt|sibsb|sibqt|sibb|sib|si|rex|retcs|retcb|restqt|ress|resqt|resd|resb|res|rekk|rek|redsd|redd|red|recs|recb|rebtqt|rebsb|rebqt|rebb|reb|re|mix|mitcs|mitcb|mistqt|miss|misqt|misd|misb|mis|mikk|mik|midsd|midd|mid|mics|micb|mibtqt|mibsb|mibqt|mibb|mib|mi|lax|latcs|latcb|lastqt|lass|lasqt|lasd|lasb|las|lakk|lak|ladsd|ladd|lad|lacs|lacb|labtqt|labsb|labqt|labb|lab|la|hississ|hiss|hisis|hisih|his|hih|hessess|heses|heseh|h|gx|gtqs|gtqf|gss|gsharpsharp|gsharp|gs|gqs|gqf|gississ|giss|gisis|gisih|gis|gih|gflatflat|gflat|gff|gf|gessess|gess|geses|geseh|ges|geh|g|fx|ftqs|ftqf|fss|fsharpsharp|fsharp|fs|fqs|fqf|fississ|fiss|fisis|fisih|fis|fih|fflatflat|fflat|fff|ff|fessess|fess|feses|feseh|fes|feh|fax|fatcs|fatcb|fastqt|fass|fasqt|fasd|fasb|fas|fakk|fak|fadsd|fadd|fad|facs|facb|fabtqt|fabsb|fabqt|fabb|fab|fa|(?&lt;!#)f|ex|etqs|etqf|essess|ess|esharpsharp|esharp|eses|eseh|es|eqs|eqf|eississ|eiss|eisis|eisih|eis|eih|eflatflat|eflat|eff|ef|eessess|eess|eeses|eeseh|ees|eeh|e|dx|dtqs|dtqf|dss|dsharpsharp|dsharp|ds|dqs|dqf|dox|dotcs|dotcb|dostqt|doss|dosqt|dosd|dosb|dos|dokk|dok|dodsd|dodd|dod|docs|docb|dobtqt|dobsb|dobqt|dobb|dob|do|dississ|diss|disis|disih|dis|dih|dflatflat|dflat|dff|df|dessess|dess|deses|deseh|des|deh|d|cx|ctqs|ctqf|css|csharpsharp|csharp|cs|cqs|cqf|cississ|ciss|cisis|cisih|cis|cih|cflatflat|cflat|cff|cf|cessess|cess|ceses|ceseh|ces|ceh|c|bx|btqs|btqf|bss|bsharpsharp|bsharp|bs|bqs|bqf|bisis|bisih|bis|bih|bflatflat|bflat|bff|bf|bess|beses|beseh|bes|beh|bb|b|ax|atqs|atqf|assess|ass|asharpsharp|asharp|ases|aseh|asas|asah|as|aqs|aqf|aississ|aiss|aisis|aisih|ais|aih|aflatflat|aflat|aff|af|aessess|aess|aeses|aeseh|aes|aeh|a|a))?)(?!(solx|soltcs|soltcb|solstqt|solss|solsqt|solsd|solsb|sols|solkk|solk|soldsd|soldd|sold|solcs|solcb|solbtqt|solbsb|solbqt|solbb|solb|sol|six|sitcs|sitcb|sistqt|siss|sisqt|sisd|sisb|sis|sikk|sik|sidsd|sidd|sid|sics|sicb|sibtqt|sibsb|sibqt|sibb|sib|si|rex|retcs|retcb|restqt|ress|resqt|resd|resb|res|rekk|rek|redsd|redd|red|recs|recb|rebtqt|rebsb|rebqt|rebb|reb|re|mix|mitcs|mitcb|mistqt|miss|misqt|misd|misb|mis|mikk|mik|midsd|midd|mid|mics|micb|mibtqt|mibsb|mibqt|mibb|mib|mi|lax|latcs|latcb|lastqt|lass|lasqt|lasd|lasb|las|lakk|lak|ladsd|ladd|lad|lacs|lacb|labtqt|labsb|labqt|labb|lab|la|hississ|hiss|hisis|hisih|his|hih|hessess|heses|heseh|h|gx|gtqs|gtqf|gss|gsharpsharp|gsharp|gs|gqs|gqf|gississ|giss|gisis|gisih|gis|gih|gflatflat|gflat|gff|gf|gessess|gess|geses|geseh|ges|geh|g|fx|ftqs|ftqf|fss|fsharpsharp|fsharp|fs|fqs|fqf|fississ|fiss|fisis|fisih|fis|fih|fflatflat|fflat|fff|ff|fessess|fess|feses|feseh|fes|feh|fax|fatcs|fatcb|fastqt|fass|fasqt|fasd|fasb|fas|fakk|fak|fadsd|fadd|fad|facs|facb|fabtqt|fabsb|fabqt|fabb|fab|fa|(?&lt;!#)f|ex|etqs|etqf|essess|ess|esharpsharp|esharp|eses|eseh|es|eqs|eqf|eississ|eiss|eisis|eisih|eis|eih|eflatflat|eflat|eff|ef|eessess|eess|eeses|eeseh|ees|eeh|e|dx|dtqs|dtqf|dss|dsharpsharp|dsharp|ds|dqs|dqf|dox|dotcs|dotcb|dostqt|doss|dosqt|dosd|dosb|dos|dokk|dok|dodsd|dodd|dod|docs|docb|dobtqt|dobsb|dobqt|dobb|dob|do|dississ|diss|disis|disih|dis|dih|dflatflat|dflat|dff|df|dessess|dess|deses|deseh|des|deh|d|cx|ctqs|ctqf|css|csharpsharp|csharp|cs|cqs|cqf|cississ|ciss|cisis|cisih|cis|cih|cflatflat|cflat|cff|cf|cessess|cess|ceses|ceseh|ces|ceh|c|bx|btqs|btqf|bss|bsharpsharp|bsharp|bs|bqs|bqf|bisis|bisih|bis|bih|bflatflat|bflat|bff|bf|bess|beses|beseh|bes|beh|bb|b|ax|atqs|atqf|assess|ass|asharpsharp|asharp|ases|aseh|asas|asah|as|aqs|aqf|aississ|aiss|aisis|aisih|ais|aih|aflatflat|aflat|aff|af|aessess|aess|aeses|aeseh|aes|aeh|a|a))</string>
+			<key>name</key>
+			<string>keyword.notechord.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond manual beam</string>
+			<key>match</key>
+			<string>([_^-]\s*)?\[|\]</string>
+			<key>name</key>
+			<string>constant.numeric.beam.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond polyphony delimiter</string>
+			<key>match</key>
+			<string>&lt;&lt;|&gt;&gt;</string>
+			<key>name</key>
+			<string>constant.language.polydelim.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond polyphony separator</string>
+			<key>match</key>
+			<string>\\\\</string>
+			<key>name</key>
+			<string>constant.character.polysep.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond articulation mark; must be kept before the Lilypond keyword rule</string>
+			<key>match</key>
+			<string>[-_^][-_^+|&gt;.]</string>
+			<key>name</key>
+			<string>string.interpolated.articulation.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond time signature</string>
+			<key>match</key>
+			<string>\d+\/\d+</string>
+			<key>name</key>
+			<string>storage.type.timesig.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>Melisma; must be kept after the string rule</string>
+			<key>match</key>
+			<string>(_\s)+</string>
+			<key>name</key>
+			<string>entity.name.tag.melisma.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond tie or slur</string>
+			<key>match</key>
+			<string>([_^-]\s*)?\(|[_^-]?~|\)</string>
+			<key>name</key>
+			<string>support.function.tieslur.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond phrasing slur</string>
+			<key>match</key>
+			<string>([_^-]\s*)?\\\(|\\\)</string>
+			<key>name</key>
+			<string>support.constant.phraslur.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond ligature</string>
+			<key>match</key>
+			<string>([_^-]\s*)?\\\[|\\\]</string>
+			<key>name</key>
+			<string>support.constant.ligature.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond bar line</string>
+			<key>match</key>
+			<string>[|]</string>
+			<key>name</key>
+			<string>support.type.barline.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond hairpin</string>
+			<key>match</key>
+			<string>\\[&lt;!&gt;]</string>
+			<key>name</key>
+			<string>support.variable.hairpin.lilypond</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.lilypond-notemode</string>
+	<key>uuid</key>
+	<string>6f1e8a88-4aa8-4980-9a16-472406a2055c</string>
+</dict>
+</plist>
