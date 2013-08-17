@@ -37,7 +37,7 @@
             "content":  "LilyPond time signature"
         },
         {
-            "match":    "([-_+^.\\\\](\\s*))?\\d+(\\s*[.]\\s*)*",
+            "match":    "([-_+^.\\\\](\\s*))?\\d+(\\s*[.]\\s*)*((\\s*\\*\\s*\\d+(\\/\\d+)?)+)?",
             "name":     "storage.type.number.lilypond",
             "content":  "LilyPond number with optional augmentation dots"
         }

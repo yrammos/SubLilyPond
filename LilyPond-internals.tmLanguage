@@ -66,7 +66,7 @@
 			<key>content</key>
 			<string>LilyPond number with optional augmentation dots</string>
 			<key>match</key>
-			<string>([-_+^.\\](\s*))?\d+(\s*[.]\s*)*</string>
+			<string>([-_+^.\\](\s*))?\d+(\s*[.]\s*)*((\s*\*\s*\d+(\/\d+)?)+)?</string>
 			<key>name</key>
 			<string>storage.type.number.lilypond</string>
 		</dict>
