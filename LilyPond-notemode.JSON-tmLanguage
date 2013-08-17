@@ -2,11 +2,6 @@
     "scopeName": "source.lilypond-notemode",
     "patterns": [
         {
-            "match":    "(128|64|32|16|8|4|2|1|\\\\breve|\\\\longa|\\\\maxima)(\\s*[.]\\s*)*=\\s*\\d+(\\s*~\\s*\\d+)?",
-            "name":     "storage.type.tempo.lilypond",
-            "content":  "LilyPond tempo or tempo range"
-        },
-        {
             "match":    "<(?!<)|(?<!\\\\)>(?!>)(\\s*(128|64|32|16|8|4|2|1|\\\\breve|\\\\longa|\\\\maxima)(\\s*[.]\\s*)*((\\s*\\*\\s*\\d+(\\/\\d+)?)+)?)?",
             "name":     "keyword.operator.chord.lilypond",
             "content":  "LilyPond chord"
@@ -30,11 +25,6 @@
             "match":    "[-_^][-_^+|>.]",
             "name":     "string.interpolated.articulation.lilypond",
             "content":  "LilyPond articulation mark; must be kept before the Lilypond keyword rule"
-        },
-        {
-            "match":    "\\d+\\/\\d+",
-            "name":     "storage.type.timesig.lilypond",
-            "content":  "LilyPond time signature"
         },
         {
             "match":    "([_^-]\\s*)?\\(|[_^-]?~|\\)",

@@ -48,6 +48,22 @@
 		</dict>
 		<dict>
 			<key>content</key>
+			<string>LilyPond tempo or tempo range</string>
+			<key>match</key>
+			<string>(128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)(\s*[.]\s*)*=\s*\d+(\s*~\s*\d+)?</string>
+			<key>name</key>
+			<string>storage.type.tempo.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
+			<string>LilyPond time signature</string>
+			<key>match</key>
+			<string>\d+\/\d+</string>
+			<key>name</key>
+			<string>storage.type.timesig.lilypond</string>
+		</dict>
+		<dict>
+			<key>content</key>
 			<string>LilyPond number with optional augmentation dots</string>
 			<key>match</key>
 			<string>([-_+^.\\](\s*))?\d+(\s*[.]\s*)*</string>
