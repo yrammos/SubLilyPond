@@ -8,11 +8,49 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>\(</string>
+			<string>\$(`|')?\(</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>name</key>
-			<string>meta.scheme.scheme.lilypond</string>
+			<string>meta.lilypond.schememode</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lisp</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>#(`|')?\(</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>meta.lilypond.schememode</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lisp</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>#</string>
+			<key>end</key>
+			<string>\s</string>
+			<key>name</key>
+			<string>meta.lilypond.schememode</string>
 			<key>patterns</key>
 			<array>
 				<dict>

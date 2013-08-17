@@ -65,7 +65,29 @@
             "match":    "\\\\[<!>]",
             "name":     "support.variable.hairpin.lilypond",
             "content":  "LilyPond hairpin"
-        }
+        },
+        {
+            "name":             "meta.lilypond.notemode",
+            "begin":            "({)",
+            "end":              "(})",
+            "beginCaptures":    {
+                                    "1":    {"name": "entity.other.lilypond"}
+                                },
+            "endCaptures":      {
+                                    "1":    {"name": "entity.other.lilypond"} 
+                                },
+            "patterns": [
+                                {"include": "source.lilypond-notenames"},
+                                {"include": "source.lilypond-internals"},
+                                {"include": "$self"},
+                                {"include": "source.lilypond-figbassmode"},
+                                {"include": "source.lilypond-schememode"}
+                        ]
+        },
+        {"include": "source.lilypond-notenames"},
+        {"include": "source.lilypond-internals"},
+        {"include": "source.lilypond-figbassmode"},
+        {"include": "source.lilypond-schememode"}
     ],
     "uuid": "6f1e8a88-4aa8-4980-9a16-472406a2055c"
 }
