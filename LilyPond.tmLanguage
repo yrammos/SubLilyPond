@@ -52,6 +52,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>source.lilypond-notenames</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>source.lilypond-figbass</string>
 				</dict>
 			</array>

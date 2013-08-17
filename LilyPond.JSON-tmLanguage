@@ -16,6 +16,7 @@
                                     "1":    {"name": "entity.other.lilypond"}
                                 },
             "patterns": [
+                                {"include": "source.lilypond-notenames"},
                                 {"include": "source.lilypond-figbass"}
                         ]
         },
