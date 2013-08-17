@@ -24,6 +24,27 @@
                                         ]
                 },
                 {
+                    "name":             "meta.lilypond.figbassmode",
+                    "begin":            "([-_^](\\s*))?(((\\\\figures\\s*)(<))|((\\\\figuremode\\s*)(<)))",
+                    "end":              "(>)",
+                    "beginCaptures":    {
+                                            "1":    {"name": "entity.name.class.keyword.lilypond"},
+                                            "5":    {"name": "entity.name.class.keyword.lilypond"},
+                                            "6":    {"name": "keyword.operator.chord.lilypond"},
+                                            "8":    {"name": "entity.name.class.keyword.lilypond"},
+                                            "9":    {"name": "entity.other.lilypond"}
+                                        },
+                    "endCaptures":      {
+                                            "1":    {"name": "keyword.operator.chord.lilypond"}
+                                        },
+                    "patterns":         [
+                                            {"include": "source.lilypond-notenames"},
+                                            {"include": "source.lilypond-internals"},
+                                            {"include": "$self"},                                            
+                                            {"include": "source.lilypond-scheme"}
+                                        ]
+                },                
+                {
                     "name":             "meta.lilypond.figbassmode.notemode",
                     "begin":            "({)",
                     "end":              "(})",
