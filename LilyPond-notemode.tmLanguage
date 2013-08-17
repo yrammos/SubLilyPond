@@ -40,7 +40,7 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>LilyPond articulation mark; must be kept before the Lilypond keyword rule</string>
+			<string>LilyPond articulation mark</string>
 			<key>match</key>
 			<string>[-_^][-_^+|&gt;.]</string>
 			<key>name</key>

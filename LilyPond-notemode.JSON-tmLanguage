@@ -24,7 +24,7 @@
         {
             "match":    "[-_^][-_^+|>.]",
             "name":     "string.interpolated.articulation.lilypond",
-            "content":  "LilyPond articulation mark; must be kept before the Lilypond keyword rule"
+            "content":  "LilyPond articulation mark"
         },
         {
             "match":    "([_^-]\\s*)?\\(|[_^-]?~|\\)",
