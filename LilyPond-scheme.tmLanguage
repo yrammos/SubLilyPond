@@ -17,7 +17,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$self</string>
+					<string>#scheme</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -36,7 +36,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$self</string>
+					<string>#scheme</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -55,7 +55,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$self</string>
+					<string>#scheme</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -63,7 +63,34 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.lisp</string>
+		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>scheme</key>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>meta.scheme.scheme.lilypond</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#scheme</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lisp</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.lilypond-schememode</string>
 	<key>uuid</key>

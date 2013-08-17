@@ -24,7 +24,7 @@
                                         ]
                 },
                 {
-                    "name":             "meta.lilypond.figbassmode.nestednotemode",
+                    "name":             "meta.lilypond.figbassmode.notemode",
                     "begin":            "({)",
                     "end":              "(})",
                     "beginCaptures":    {

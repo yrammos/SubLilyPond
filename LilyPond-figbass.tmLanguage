@@ -95,7 +95,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.lilypond.figbassmode.nestednotemode</string>
+			<string>meta.lilypond.figbassmode.notemode</string>
 			<key>patterns</key>
 			<array>
 				<dict>
