@@ -64,14 +64,6 @@
 		</dict>
 		<dict>
 			<key>content</key>
-			<string>Melisma; must be kept after the string rule</string>
-			<key>match</key>
-			<string>(_\s)+</string>
-			<key>name</key>
-			<string>entity.name.tag.melisma.lilypond</string>
-		</dict>
-		<dict>
-			<key>content</key>
 			<string>LilyPond tie or slur</string>
 			<key>match</key>
 			<string>([_^-]\s*)?\(|[_^-]?~|\)</string>

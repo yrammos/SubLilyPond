@@ -37,11 +37,6 @@
             "content":  "LilyPond time signature"
         },
         {
-            "match":    "(_\\s)+",
-            "name":     "entity.name.tag.melisma.lilypond",
-            "content":  "Melisma; must be kept after the string rule"
-        },
-        {
             "match":    "([_^-]\\s*)?\\(|[_^-]?~|\\)",
             "name":     "support.function.tieslur.lilypond",
             "content":  "LilyPond tie or slur"
