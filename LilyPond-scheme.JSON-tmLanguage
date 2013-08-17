@@ -1,0 +1,15 @@
+{ "name": "LilyPond Scheme mode",
+  "scopeName": "source.lilypond-schememode",
+  "patterns": [
+  	{
+        "begin":    "\\(",
+        "end":      "\\)",
+        "name":     "meta.scheme.scheme.lilypond",
+        "patterns": [
+                        {"include": "$self"},
+                        {"include": "source.lisp"}
+                    ]
+    }
+  ],
+  "uuid": "a3492901-192a-4241-bbc6-eb49696bef83"
+}
