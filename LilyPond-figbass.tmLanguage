@@ -8,15 +8,20 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>([-_^](\s*))?(((\\figures\s*)({))|((\\figuremode\s*)({)))</string>
+			<string>({)|([-_^](\s*))?(((\\figures\s*)({))|((\\figuremode\s*)({)))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
+					<string>entity.other.lilypond</string>
 				</dict>
-				<key>5</key>
+				<key>10</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.lilypond</string>
+				</dict>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.class.keyword.lilypond</string>
@@ -24,17 +29,17 @@
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.lilypond</string>
+					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
-				<key>8</key>
+				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
+					<string>entity.other.lilypond</string>
 				</dict>
 				<key>9</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.lilypond</string>
+					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -53,33 +58,21 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>source.lilypond-figuregroup</string>
+					<string>$self</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#self</string>
+					<string>source.lilypond-internals</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-figuregroup</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>source.lilypond-schememode</string>
 				</dict>
 			</array>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>source.lilypond-figuregroup</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>source.lilypond-notenames</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>source.lilypond-internals</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>source.lilypond-schememode</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
