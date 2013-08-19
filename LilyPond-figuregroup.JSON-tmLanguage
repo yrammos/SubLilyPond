@@ -1,0 +1,40 @@
+{   "name": "LilyPond figure group",
+    "scopeName": "source.lilypond-figuregroup",
+    "patterns":     [
+                        {
+                            "name":          "meta.lilypond.figuregroup",
+                            "begin":         "(<)",
+                            "end":           "(>)",
+                            "beginCaptures": {
+                                                "1":    {"name": "constant.numeric.fbgroupopen.lilypond"}
+                                             },
+                            "endCaptures":   {
+                                                "1":    {"name": "constant.numeric.fbgroupclose.lilypond"}
+                                             },
+                            "patterns":      [                                         
+                                                {"include": "#group"},
+                                                {"include": "#figure"},
+                                                {"include": "#accidental"}
+                                             ]
+                        },
+                        {"include": "source.lilypond-schememode"}
+                    ],
+    "repository":   {
+                        "group":        {
+                                            "name":             "keyword.operator.figuregroup.brackets",
+                                            "match":            "(\\[)|(\\])",
+                                            "content":          "Vertical brackets grouping figured bass figures"
+                                        },
+                        "figure":       {
+                                            "match":    "\\d*(\\\\\\+|/|\\\\\\\\|\\\\!)?",
+                                            "name":     "keyword.fbfigure.lilypond",
+                                            "content":  "Figured bass figure, optionally with aug or dim indicators"
+                                        },
+                        "accidental":   {
+                                            "match":    "(!|\\+|-|\\+\\+|--)",
+                                            "name":     "keyword.fbaccidental.lilypond",
+                                            "content":  "Figured bass accidental"
+                                        }
+                    },
+    "uuid": "d5c2b5e3-eac8-4efa-b84f-7cf4407a2f2a"
+}

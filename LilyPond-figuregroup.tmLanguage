@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>LilyPond figure group</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>(&lt;)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.fbgroupopen.lilypond</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(&gt;)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.fbgroupclose.lilypond</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.lilypond.figuregroup</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#group</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#figure</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#accidental</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.lilypond-schememode</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>accidental</key>
+		<dict>
+			<key>content</key>
+			<string>Figured bass accidental</string>
+			<key>match</key>
+			<string>(!|\+|-|\+\+|--)</string>
+			<key>name</key>
+			<string>keyword.fbaccidental.lilypond</string>
+		</dict>
+		<key>figure</key>
+		<dict>
+			<key>content</key>
+			<string>Figured bass figure, optionally with aug or dim indicators</string>
+			<key>match</key>
+			<string>\d*(\\\+|/|\\\\|\\!)?</string>
+			<key>name</key>
+			<string>keyword.fbfigure.lilypond</string>
+		</dict>
+		<key>group</key>
+		<dict>
+			<key>content</key>
+			<string>Vertical brackets grouping figured bass figures</string>
+			<key>match</key>
+			<string>(\[)|(\])</string>
+			<key>name</key>
+			<string>keyword.operator.figuregroup.brackets</string>
+		</dict>
+	</dict>
+	<key>scopeName</key>
+	<string>source.lilypond-figuregroup</string>
+	<key>uuid</key>
+	<string>d5c2b5e3-eac8-4efa-b84f-7cf4407a2f2a</string>
+</dict>
+</plist>

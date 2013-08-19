@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>fileTypes</key>
-	<array>
-		<string></string>
-	</array>
 	<key>name</key>
 	<string>LilyPond figured bass</string>
 	<key>patterns</key>
@@ -57,131 +53,21 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>source.lilypond-notenames</string>
+					<string>source.lilypond-figuregroup</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>source.lilypond-internals</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-scheme</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>([-_^](\s*))?(((\\figures\s*)(&lt;))|((\\figuremode\s*)(&lt;)))</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
-				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
-				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.chord.lilypond</string>
-				</dict>
-				<key>8</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
-				</dict>
-				<key>9</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.lilypond</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(&gt;)</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.chord.lilypond</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.lilypond.figbassmode</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-notenames</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-internals</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-scheme</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>({)</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.lilypond</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(})</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.lilypond</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.lilypond.figbassmode.notemode</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-notenames</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-internals</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-notemode</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
+					<string>#self</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>source.lilypond-schememode</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.lilypond-figuregroup</string>
 		</dict>
 		<dict>
 			<key>include</key>

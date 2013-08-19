@@ -5,7 +5,7 @@
                     {"include": "source.lilypond-notenames"},
                     {"include": "source.lilypond-internals"},
                     {"include": "source.lilypond-notemode"},
-                    {"include": "source.lilypond-figbassmode"},
+                    {"include": "source.lilypond-figbassmode"},                    
                     {"include": "source.lilypond-schememode"}
                 ],
     "uuid": "f9b5511b-f318-412c-9078-fb703c82528e"
