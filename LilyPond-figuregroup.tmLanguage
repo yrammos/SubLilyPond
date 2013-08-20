@@ -18,10 +18,15 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(&gt;)</string>
+			<string>(&gt;)(\s*(128|64|32|16|8|4|2|1|\\breve|\\longa|\\maxima)(\s*[.]\s*)*((\s*\*\s*\d+(\/\d+)?)+)?)?</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.fbgroupclose.lilypond</string>
+				</dict>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>constant.numeric.fbgroupclose.lilypond</string>

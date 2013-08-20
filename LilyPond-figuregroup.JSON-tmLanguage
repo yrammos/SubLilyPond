@@ -4,12 +4,13 @@
                         {
                             "name":          "meta.lilypond.figuregroup",
                             "begin":         "(<)",
-                            "end":           "(>)",
+                            "end":           "(>)(\\s*(128|64|32|16|8|4|2|1|\\\\breve|\\\\longa|\\\\maxima)(\\s*[.]\\s*)*((\\s*\\*\\s*\\d+(\\/\\d+)?)+)?)?",
                             "beginCaptures": {
                                                 "1":    {"name": "constant.numeric.fbgroupopen.lilypond"}
                                              },
                             "endCaptures":   {
-                                                "1":    {"name": "constant.numeric.fbgroupclose.lilypond"}
+                                                "1":    {"name": "constant.numeric.fbgroupclose.lilypond"},
+                                                "2":    {"name": "constant.numeric.fbgroupclose.lilypond"}                                                
                                              },
                             "patterns":      [                                         
                                                 {"include": "#group"},
