@@ -13,6 +13,7 @@
                                                 "2":    {"name": "constant.numeric.fbgroupclose.lilypond"}                                                
                                              },
                             "patterns":      [                                         
+                                                {"include": "source.lilypond-markupmode"},
                                                 {"include": "#group"},
                                                 {"include": "#figure"},
                                                 {"include": "#accidental"}

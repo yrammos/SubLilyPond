@@ -19,6 +19,7 @@
                     "patterns":         [
                                             {"include": "$self"},
                                             {"include": "source.lilypond-internals"},
+                                            {"include": "source.lilypond-markupmode"},
                                             {"include": "source.lilypond-figuregroup"},
                                             {"include": "source.lilypond-schememode"}
                                         ]
