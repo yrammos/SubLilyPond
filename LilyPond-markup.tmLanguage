@@ -57,7 +57,42 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>source.lilypond-schememode</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>({)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.lilypond</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.lilypond</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.lilypond.markupmode.nested</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
 				</dict>
 			</array>
 		</dict>

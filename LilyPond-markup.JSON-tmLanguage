@@ -17,7 +17,22 @@
                                             },
                         "patterns":         [
                                                 {"include": "source.lilypond-internals"},
+                                                {"include": "$self"},
                                                 {"include": "source.lilypond-schememode"}
+                                            ]
+                    },
+                    {
+                        "name":             "meta.lilypond.markupmode.nested",
+                        "begin":            "({)",
+                        "end":              "(})",
+                        "beginCaptures":    {
+                                                "1":    {"name": "entity.other.lilypond"}
+                                            },
+                        "endCaptures":      {
+                                                "1":    {"name": "entity.other.lilypond"}
+                                            },
+                        "patterns":         [
+                                                {"include": "$self"}
                                             ]
                     }
               ],
