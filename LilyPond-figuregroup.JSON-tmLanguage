@@ -22,9 +22,9 @@
                     ],
     "repository":   {
                         "group":        {
-                                            "name":             "keyword.operator.figuregroup.brackets",
-                                            "match":            "(\\[)|(\\])",
-                                            "content":          "Vertical brackets grouping figured bass figures"
+                                            "name":     "keyword.operator.figuregroup.brackets",
+                                            "match":    "(\\[)|(\\])",
+                                            "content":  "Vertical brackets grouping figured bass figures"
                                         },
                         "figure":       {
                                             "match":    "\\d*(\\\\\\+|/|\\\\\\\\|\\\\!)?",

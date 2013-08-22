@@ -1,22 +1,25 @@
 { "name": "LilyPond markup",
   "scopeName": "source.lilypond-markupmode",
   "patterns": [
-  					{
-	  					"name":             "meta.lilypond.markupmode",
-	                    "begin":            "([-_^](\\s*))?((\\\\markup\\s*)({))",
-	                    "end":              "(})",
-	                    "beginCaptures":    {
-	                                            "1":    {"name": "entity.name.class.keyword.lilypond"},
-	                                            "4":    {"name": "entity.name.class.keyword.lilypond"},
-	                                            "5":    {"name": "entity.other.lilypond"}	                                        },
-	                    "endCaptures":      {
-	                                            "1":    {"name": "entity.other.lilypond"}
-	                                        },
-	                    "patterns":         [
-	                                            {"include": "source.lilypond-internals"},
-	                                            {"include": "source.lilypond-schememode"}
-	                                        ]
-  					}
-  			  ],
+                    {
+                        "name":             "meta.lilypond.markupmode",
+                        "begin":            "([-_^](\\s*))?(((\\\\markup\\s*)({))|((\\\\markuplist\\s*)({)))",
+                        "end":              "(})",
+                        "beginCaptures":    {
+                                                "1":    {"name": "entity.name.class.keyword.lilypond"},
+                                                "5":    {"name": "entity.name.class.keyword.lilypond"},
+                                                "6":    {"name": "entity.other.lilypond"},
+                                                "8":    {"name": "entity.name.class.keyword.lilypond"},
+                                                "9":    {"name": "entity.other.lilypond"}
+                                            },
+                        "endCaptures":      {
+                                                "1":    {"name": "entity.other.lilypond"}
+                                            },
+                        "patterns":         [
+                                                {"include": "source.lilypond-internals"},
+                                                {"include": "source.lilypond-schememode"}
+                                            ]
+                    }
+              ],
   "uuid": "8e4f5e35-589f-4645-b6b0-67ec5971210a"
 }

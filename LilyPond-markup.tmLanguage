@@ -8,7 +8,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>([-_^](\s*))?((\\markup\s*)({))</string>
+			<string>([-_^](\s*))?(((\\markup\s*)({))|((\\markuplist\s*)({)))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -16,12 +16,22 @@
 					<key>name</key>
 					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
-				<key>4</key>
+				<key>5</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
-				<key>5</key>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.lilypond</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.class.keyword.lilypond</string>
+				</dict>
+				<key>9</key>
 				<dict>
 					<key>name</key>
 					<string>entity.other.lilypond</string>
