@@ -62,16 +62,13 @@
                                     "1":    {"name": "entity.other.lilypond"} 
                                 },
             "patterns": [
-                                {"include": "source.lilypond-notenames"},
-                                {"include": "source.lilypond-internals"},
-                                {"include": "$self"},
-                                {"include": "source.lilypond-markupmode"},
-                                {"include": "source.lilypond-figbassmode"},
-                                {"include": "source.lilypond-schememode"}
+                                {"include": "$self"}
                         ]
         },
         {"include": "source.lilypond-notenames"},
         {"include": "source.lilypond-internals"},
+        {"include": "source.lilypond-lyricsmode"},
+        {"include": "source.lilypond-markupmode"},
         {"include": "source.lilypond-figbassmode"},
         {"include": "source.lilypond-schememode"}
     ],
