@@ -63,10 +63,6 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>include</key>
-			<string>source.lisp</string>
-		</dict>
 	</array>
 	<key>repository</key>
 	<dict>

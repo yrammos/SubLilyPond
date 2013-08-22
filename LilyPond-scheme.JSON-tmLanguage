@@ -27,8 +27,7 @@
                                             {"include": "#scheme"},
                                             {"include": "source.lisp"}
                                         ]
-                        },
-                        {"include": "source.lisp"}
+                        }
                     ],
     "repository":   {
                         "scheme":   {
