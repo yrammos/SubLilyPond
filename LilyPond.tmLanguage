@@ -24,6 +24,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>source.lilypond-markupmode</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>source.lilypond-figbassmode</string>
 		</dict>
 		<dict>
