@@ -32,8 +32,9 @@
                                                 "1":    {"name": "entity.other.lilypond"}
                                             },
                         "patterns":         [
-                                                {"include": "$self"}
-                                            ]
+                                                {"include": "source.lilypond-internals"},
+                                                {"include": "$self"},
+                                                {"include": "source.lilypond-schememode"}                                            ]
                     }
               ],
   "uuid": "8e4f5e35-589f-4645-b6b0-67ec5971210a"

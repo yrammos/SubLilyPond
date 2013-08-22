@@ -92,7 +92,15 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>source.lilypond-internals</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-schememode</string>
 				</dict>
 			</array>
 		</dict>
