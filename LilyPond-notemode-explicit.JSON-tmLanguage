@@ -1,0 +1,30 @@
+{ "name": "LilyPond explicit notemode",
+  "scopeName": "source.lilypond-notemode-explicit",
+  "patterns": [
+                {
+                    "name":             "meta.lilypond-notemode-explicit",
+                    "begin":            "([-_^](\\s*))?(\\\\notemode)\\s*({)",
+                    "end":              "(})",
+                    "beginCaptures":    {
+                                            "1":    {"name": "entity.name.class.keyword.lilypond"},
+                                            "3":    {"name": "entity.name.class.keyword.lilypond"},
+                                            "4":    {"name": "entity.other.lilypond"}
+                                        },
+                    "endCaptures":      {
+                                            "1":    {"name": "entity.other.lilypond"}
+                                        },
+                    "patterns":         [
+                                            {"include": "$self"},
+                                            {"include": "source.lilypond-notenames"},
+                                            {"include": "source.lilypond-notemode-explicit"},
+                                            {"include": "source.lilypond-internals"},
+                                            {"include": "source.lilypond-notemode"},
+                                            {"include": "source.lilypond-lyricsmode"},
+                                            {"include": "source.lilypond-markupmode"},
+                                            {"include": "source.lilypond-figbassmode"},                    
+                                            {"include": "source.lilypond-schememode"}
+                                        ]
+                }
+              ],
+  "uuid": "417a35bb-b7ee-4867-82f6-bbde63a133ee"
+}

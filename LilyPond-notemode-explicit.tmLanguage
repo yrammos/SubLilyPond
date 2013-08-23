@@ -3,43 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>LilyPond figured bass</string>
+	<string>LilyPond explicit notemode</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>({)|([-_^](\s*))?(((\\figures\s*)({))|((\\figuremode\s*)({)))</string>
+			<string>([-_^](\s*))?(\\notemode)\s*({)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.lilypond</string>
+					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
-				<key>10</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.lilypond</string>
-				</dict>
-				<key>2</key>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
-				</dict>
-				<key>7</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>entity.other.lilypond</string>
-				</dict>
-				<key>9</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.class.keyword.lilypond</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -53,12 +38,16 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.lilypond.figbassmode</string>
+			<string>meta.lilypond-notemode-explicit</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
 					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-notenames</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -70,11 +59,19 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>source.lilypond-notemode</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-lyricsmode</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>source.lilypond-markupmode</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>source.lilypond-figuregroup</string>
+					<string>source.lilypond-figbassmode</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -84,8 +81,8 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.lilypond-figbassmode</string>
+	<string>source.lilypond-notemode-explicit</string>
 	<key>uuid</key>
-	<string>96afd4df-67b5-42ba-9890-e9b29677bb16</string>
+	<string>417a35bb-b7ee-4867-82f6-bbde63a133ee</string>
 </dict>
 </plist>

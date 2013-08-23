@@ -53,6 +53,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>source.lilypond-notemode-explicit</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>source.lilypond-internals</string>
 				</dict>
 				<dict>
@@ -90,6 +94,10 @@
 			<string>meta.lilypond.markupmode.nested</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-notemode-explicit</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>source.lilypond-internals</string>

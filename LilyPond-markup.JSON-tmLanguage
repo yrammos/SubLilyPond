@@ -16,6 +16,7 @@
                                                 "1":    {"name": "entity.other.lilypond"}
                                             },
                         "patterns":         [
+                                                {"include": "source.lilypond-notemode-explicit"},
                                                 {"include": "source.lilypond-internals"},
                                                 {"include": "$self"},
                                                 {"include": "source.lilypond-schememode"}
@@ -32,6 +33,7 @@
                                                 "1":    {"name": "entity.other.lilypond"}
                                             },
                         "patterns":         [
+                                                {"include": "source.lilypond-notemode-explicit"},
                                                 {"include": "source.lilypond-internals"},
                                                 {"include": "$self"},
                                                 {"include": "source.lilypond-schememode"}                                            ]
