@@ -8,7 +8,7 @@
                         "beginCaptures":    {
                                                 "1":    {"name": "entity.name.class.keyword.lilypond"},
                                                 "5":    {"name": "entity.name.class.keyword.lilypond"},
-                                                "6":    {"name": "entity.other.lilypond"},
+                                                "1":    {"name": "entity.name.class.keyword.lilypond"},
                                                 "8":    {"name": "entity.name.class.keyword.lilypond"},
                                                 "9":    {"name": "entity.other.lilypond"}
                                             },
@@ -33,7 +33,6 @@
                                                 "1":    {"name": "entity.other.lilypond"}
                                             },
                         "patterns":         [
-                                                {"include": "source.lilypond-notemode-explicit"},
                                                 {"include": "source.lilypond-internals"},
                                                 {"include": "source.lilypond-notemode-explicit"},
                                                 {"include": "$self"},
