@@ -53,11 +53,11 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>source.lilypond-notemode-explicit</string>
+					<string>source.lilypond-internals</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>source.lilypond-internals</string>
+					<string>source.lilypond-notemode-explicit</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -101,6 +101,10 @@
 				<dict>
 					<key>include</key>
 					<string>source.lilypond-internals</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-notemode-explicit</string>
 				</dict>
 				<dict>
 					<key>include</key>

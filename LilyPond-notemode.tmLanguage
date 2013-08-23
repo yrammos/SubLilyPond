@@ -131,6 +131,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>source.lilypond-notemode-explicit</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>source.lilypond-markupmode</string>
 		</dict>
 		<dict>
