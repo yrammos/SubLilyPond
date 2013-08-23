@@ -123,11 +123,11 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>source.lilypond-internals</string>
+			<string>source.lilypond-lyricsmode</string>
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>source.lilypond-lyricsmode</string>
+			<string>source.lilypond-internals</string>
 		</dict>
 		<dict>
 			<key>include</key>

@@ -5,6 +5,7 @@
                     {"include": "source.lilypond-notenames"},
                     {"include": "source.lilypond-internals"},
                     {"include": "source.lilypond-notemode"},
+                    {"include": "source.lilypond-lyricsmode"},
                     {"include": "source.lilypond-markupmode"},
                     {"include": "source.lilypond-figbassmode"},                    
                     {"include": "source.lilypond-schememode"}

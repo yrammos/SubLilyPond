@@ -1,0 +1,74 @@
+{ "name": "LilyPond lyrics scopes",
+  "scopeName": "source.lilypond-lyricsmode",
+  "patterns":   [
+                    {
+                        "name":             "meta.lilypond.lyricsmode",
+                        "begin":            "([-_^](\\s*))?(((\\\\lyrics\\s*)({))|((\\\\lyricmode\\s*)({))|((\\\\addlyrics\\s*)({))|((\\\\lyricsto\\s*(\".*\")\\s*)({))|(((\\\\lyricsto)\\s*(\\S*)\\s*)({)))",
+                        "end":              "}",
+                        "beginCaptures":    {
+                                                "1":    {"name":    "entity.name.class.keyword.lilypond"},
+                                                "5":    {"name":    "entity.name.class.keyword.lilypond"},
+                                                "6":    {"name":    "entity.other.lilypond"},
+                                                "8":    {"name":    "entity.name.class.keyword.lilypond"},
+                                                "9":    {"name":    "entity.other.lilypond"},
+                                                "11":   {"name":    "entity.name.class.keyword.lilypond"},
+                                                "12":   {"name":    "entity.other.lilypond"},
+                                                "14":   {"name":    "entity.name.class.keyword.lilypond"},
+                                                "15":   {"name":    "string.lilypond"},
+                                                "16":   {"name":    "entity.other.lilypond"},
+                                                "19":   {"name":    "entity.name.class.keyword.lilypond"},
+                                                "21":   {"name":    "entity.other.lilypond"}
+                                            },
+                        "endCaptures":      {
+
+                                            },
+                        "patterns":         [
+                                                {"include": "#separator"},
+                                                {"include": "#melisma"},
+                                                {"include": "#elision"},
+                                                {"include": "source.lilypond-internals"},
+                                                {"include": "$self"},                                            
+                                                {"include": "source.lilypond-markupmode"},
+                                                {"include": "source.lilypond-schememode"}
+                                            ]
+                    },
+                    {
+                        "name":             "meta.lilypond.lyricsmode.nested",
+                        "begin":            "({)",
+                        "end":              "(})",
+                        "beginCaptures":    {
+                                                "1":    {"name": "entity.other.lilypond"}
+                                            },
+                        "endCaptures":      {
+                                                "1":    {"name": "entity.other.lilypond"}
+                                            },
+                        "patterns":         [
+                                                {"include": "#separator"},
+                                                {"include": "#melisma"},
+                                                {"include": "#elision"},
+                                                {"include": "source.lilypond-internals"},
+                                                {"include": "$self"},                                 
+                                                {"include": "source.lilypond-markupmode"},
+                                                {"include": "source.lilypond-schememode"}
+                                            ]
+                    }
+                ],
+  "repository": {
+                        "separator":        {
+                                                "match":    "\\s*--\\s*",
+                                                "name":     "support.function.syllableseparator.lilypond",
+                                                "content":  "Lyrics syllable separator"
+                                            },
+                        "melisma":          {
+                                                "match":    "(?<=\\s)(_)(?=\\s)",
+                                                "name":     "storage.type.number.manualmelisma.lilypond",
+                                                "content":  "Lyrics melisma"
+                                            },
+                        "elision":          {
+                                                "match":    "(?<=\\S)[~_](?=\\S)",
+                                                "name":     "constant.language.elision.lilypond",
+                                                "content":  "Lyrics elision"
+                                            }
+                },
+  "uuid": "f2f1b98b-daa1-4dfa-9645-d18d4b4307c9"
+}
