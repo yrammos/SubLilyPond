@@ -47,6 +47,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>source.lilypond-drummode</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>source.lilypond-lyricsmode</string>
 		</dict>
 		<dict>

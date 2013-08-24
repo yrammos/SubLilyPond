@@ -17,6 +17,7 @@
                         ]
         },
         {"include": "source.lilypond-notenames"},
+        {"include": "source.lilypond-drummode"},
         {"include": "source.lilypond-lyricsmode"},
         {"include": "source.lilypond-internals"},
         {"include": "source.lilypond-notemode-explicit"},
