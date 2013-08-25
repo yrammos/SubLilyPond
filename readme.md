@@ -1,8 +1,7 @@
-SubLilyPond
-===========
+SubLilyPond v.2
+===============
 
 LilyPond syntax highlighting in Sublime Text 2 & 3.
-
 
 ### Description
 
@@ -31,6 +30,29 @@ You may easily optimize SubLilyPond for use with your favorite color scheme by t
 ### Scheme code embedded in LilyPond
 
 Since no Scheme syntax definition is currently available for Sublime Text 2 or 3, SubLilyPond parses embedded Scheme code using the Lisp syntax definition. Scheme is a Lisp dialect, of course, and this workaround has caused no glitches so far.
+
+### New in version 2
+
+This major update provides:
+
+- Support for previously unsupported LilyPond modes:
+	- chord mode
+	- figured bass
+	- markup modes
+	- lyrics modes
+	- drum modes
+- Note mode improvements, with proper highlighting of:
+	- time signatures
+	- tempo ranges
+	- scaling durations
+	- circled fingerings
+	- ligatures
+	- abbreviated tremolo notation
+- Bug fixes and minor improvements
+
+### Reporting bugs
+
+Please include the following with your bug reports: screenshot, LilyPond snippet manifesting the issue, short issue description, and the name of your color scheme.
 
 ### Acknowledgement
 
