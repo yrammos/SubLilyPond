@@ -1,4 +1,4 @@
-{ "name": "LilyPond explicit notemode",
+{ "name": "(LilyPond explicit notemode)",
   "scopeName": "source.lilypond-notemode-explicit",
   "patterns": [
                 {

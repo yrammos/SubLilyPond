@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>LilyPond note mode</string>
+	<string>(LilyPond note mode)</string>
 	<key>patterns</key>
 	<array>
 		<dict>

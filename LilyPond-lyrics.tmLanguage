@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>LilyPond lyrics scopes</string>
+	<string>(LilyPond lyrics scopes)</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -73,9 +73,14 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>}</string>
+			<string>(})</string>
 			<key>endCaptures</key>
 			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.lilypond</string>
+				</dict>
 			</dict>
 			<key>name</key>
 			<string>meta.lilypond.lyricsmode</string>

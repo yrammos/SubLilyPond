@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>LilyPond figure group</string>
+	<string>(LilyPond figure group)</string>
 	<key>patterns</key>
 	<array>
 		<dict>

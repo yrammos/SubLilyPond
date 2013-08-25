@@ -1,4 +1,4 @@
-{ "name": "LilyPond lyrics scopes",
+{ "name": "(LilyPond lyrics scopes)",
   "scopeName": "source.lilypond-lyricsmode",
   "patterns":   [
                     {
@@ -20,7 +20,7 @@
                                                 "21":   {"name":    "entity.other.lilypond"}
                                             },
                         "endCaptures":      {
-                                                "1":    {"name":    "entity.other.lilypond"},
+                                                "1":    {"name":    "entity.other.lilypond"}
                                             },
                         "patterns":         [
                                                 {"include": "#separator"},

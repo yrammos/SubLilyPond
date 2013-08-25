@@ -1,4 +1,4 @@
-{   "name": "LilyPond note mode",
+{   "name": "(LilyPond note mode)",
     "scopeName": "source.lilypond-notemode",
     "patterns": [
         {"include": "source.lilypond-notedrum"},

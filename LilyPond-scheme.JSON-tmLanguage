@@ -1,4 +1,4 @@
-{ "name": "LilyPond Scheme mode",
+{ "name": "(LilyPond Scheme mode)",
   "scopeName": "source.lilypond-schememode",
   "patterns":        [
                         {

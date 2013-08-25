@@ -1,4 +1,4 @@
-{ "name": "LilyPond figured bass",
+{ "name": "(LilyPond figured bass)",
   "scopeName": "source.lilypond-figbassmode",
   "patterns": [
                 {

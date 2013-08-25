@@ -1,4 +1,4 @@
-{ "name": "LilyPond common note & drum mode elements",
+{ "name": "(LilyPond common note & drum mode elements)",
   "scopeName": "source.lilypond-notedrum",
   "patterns": [
                     {

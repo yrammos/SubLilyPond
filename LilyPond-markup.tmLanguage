@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>LilyPond markup</string>
+	<string>(LilyPond markup mode)</string>
 	<key>patterns</key>
 	<array>
 		<dict>

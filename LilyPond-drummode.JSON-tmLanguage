@@ -1,4 +1,4 @@
-{ "name": "LilyPond drum mode",
+{ "name": "(LilyPond drum mode)",
   "scopeName": "source.lilypond-drummode",
   "patterns":   [
                     {
