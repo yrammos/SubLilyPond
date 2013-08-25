@@ -16,10 +16,10 @@
                     "patterns":         [
                                             {"include": "$self"},
                                             {"include": "source.lilypond-notenames"},
-                                            {"include": "source.lilypond-notemode-explicit"},
                                             {"include": "source.lilypond-internals"},
                                             {"include": "source.lilypond-notemode"},
                                             {"include": "source.lilypond-lyricsmode"},
+                                            {"include": "source.lilypond-notemode-explicit"},
                                             {"include": "source.lilypond-markupmode"},
                                             {"include": "source.lilypond-figbassmode"},                    
                                             {"include": "source.lilypond-schememode"}

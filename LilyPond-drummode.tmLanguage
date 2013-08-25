@@ -60,15 +60,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>source.lilypond-notemode-explicit</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>$self</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>source.lilypond-lyricsmode</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.lilypond-notemode-explicit</string>
 				</dict>
 				<dict>
 					<key>include</key>
