@@ -33,7 +33,7 @@ Since no Scheme syntax definition is currently available for Sublime Text 2 or 3
 
 ### New in version 2
 
-This major update provides:
+This significant update provides:
 
 - Support for previously unsupported LilyPond modes:
 	- chord mode
