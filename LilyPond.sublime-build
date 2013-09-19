@@ -1,6 +1,6 @@
 {
-  "shell_cmd": "lilypond -o\"${file_path}\\lytemp\\\\${file_base_name}\" \"$file\"",
-  "file_regex": "^((?:[a-zA-Z]:)?..[^:]*):([0-9]+):?([0-9]+)?:? ((?:error|warning):.*)$",
+  "shell_cmd": "lilypond -o\"${file_path}/lytemp/${file_base_name}\" \"$file\"",
+  "file_regex": "^((?:[a-zA-Z]:)?..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
   "selector": "source.lilypond",
   "working_dir": "${file_path}",
   
@@ -8,11 +8,11 @@
   [
     {
       "name": "Run",
-      "shell_cmd": "\"${file_path}\\lytemp\\\\${file_base_name}.pdf\""
+      "shell_cmd": "\"${file_path}/lytemp/${file_base_name}.pdf\""
     },
     {
       "name": "Play MIDI",
-      "shell_cmd": "\"${file_path}\\lytemp\\\\${file_base_name}.mid\""
+      "shell_cmd": "\"${file_path}/lytemp/${file_base_name}.mid\""
     }
   ]
 }
