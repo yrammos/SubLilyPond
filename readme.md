@@ -48,6 +48,7 @@ This significant update provides:
 	- circled fingerings
 	- ligatures
 	- abbreviated tremolo notation
+- Support for the Toggle Comment and Toggle Block Comment commands
 - Bug fixes and minor improvements
 
 ### Reporting bugs
