@@ -8,6 +8,51 @@
 	<array>
 		<dict>
 			<key>begin</key>
+			<string>([-_^](\s*))?(((\\markup)(\s+))|((\\markuplist)(\s+)))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.class.keyword.lilypond</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.class.keyword.lilypond</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.class.keyword.lilypond</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\s+)</string>
+			<key>name</key>
+			<string>meta.lilypond.markupmode</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-internals</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-notemode-explicit</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.lilypond-schememode</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>([-_^](\s*))?(((\\markup\s*)({))|((\\markuplist\s*)({)))</string>
 			<key>beginCaptures</key>
 			<dict>
