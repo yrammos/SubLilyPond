@@ -22,7 +22,7 @@
                         "content":  "LilyPond polyphony separator"
                     },
                     {
-                        "match":    "[-_^][-_^+|>.]",
+                        "match":    "[-_^][-_^+|!>.]",
                         "name":     "string.interpolated.articulation.lilypond",
                         "content":  "LilyPond articulation mark"
                     },
