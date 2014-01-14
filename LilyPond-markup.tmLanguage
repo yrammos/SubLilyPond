@@ -30,7 +30,7 @@
 			<key>end</key>
 			<string>(\s+)</string>
 			<key>name</key>
-			<string>meta.lilypond.markupmode</string>
+			<string>meta.lilypond.markupmode.singleword</string>
 			<key>patterns</key>
 			<array>
 				<dict>
