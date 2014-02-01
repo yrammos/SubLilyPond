@@ -2,6 +2,22 @@
   "scopeName": "source.lilypond-markupmode",
   "patterns": [
                     {
+                        "name":             "meta.lilypond.markupmode.singleword",
+                        "begin":            "([-_^](\\s*))?(((\\\\markup)(\\s+))|((\\\\markuplist)(\\s+)))",
+                        "end":              "(\\s+)",
+                        "beginCaptures":    {
+                                                "1":    {"name": "entity.name.class.keyword.lilypond"},
+                                                "5":    {"name": "entity.name.class.keyword.lilypond"},
+                                                "8":    {"name": "entity.name.class.keyword.lilypond"}
+                                            },
+                        "patterns":         [
+                                                {"include": "source.lilypond-internals"},
+                                                {"include": "source.lilypond-notemode-explicit"},
+                                                {"include": "$self"},
+                                                {"include": "source.lilypond-schememode"}
+                                            ]
+                    },
+                    {
                         "name":             "meta.lilypond.markupmode",
                         "begin":            "([-_^](\\s*))?(((\\\\markup\\s*)({))|((\\\\markuplist\\s*)({)))",
                         "end":              "(})",

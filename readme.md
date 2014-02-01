@@ -31,6 +31,11 @@ You may easily optimize SubLilyPond for use with your favorite color scheme by t
 
 Since no Scheme syntax definition is currently available for Sublime Text 2 or 3, SubLilyPond parses embedded Scheme code using the Lisp syntax definition. Scheme is a Lisp dialect, of course, and this workaround has caused no glitches so far.
 
+### New in version 2.1
+- Support for the Toggle Comment and Toggle Block Comment editor commands
+- Support for new LilyPond 2.18 keywords
+- Bug fixes and minor improvements
+
 ### New in version 2
 
 This significant update provides:
@@ -48,7 +53,6 @@ This significant update provides:
 	- circled fingerings
 	- ligatures
 	- abbreviated tremolo notation
-- Bug fixes and minor improvements
 
 ### Reporting bugs
 
