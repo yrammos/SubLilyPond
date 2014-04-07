@@ -3,6 +3,8 @@ SubLilyPond v.2
 
 LilyPond syntax highlighting in Sublime Text 2 & 3.
 
+**ANNOUNCEMENT:** Using [Atom](http://atom.io) or [TextMate](http://macromates.com) instead? SubLilyPond ports to these editors are now available ([AtLilyPond](https://www.github.com/yrammos/AtLilyPond), [tmLilyPond](https://www.github.com/yrammos/tmLilyPond)).
+
 ### Description
 
 This project aims at providing comprehensive and consistent syntax highlighting of [GNU LilyPond](http://lilypond.org) code in [Sublime Text 2 and 3](http://www.sublimetext.com).
