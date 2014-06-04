@@ -62,6 +62,6 @@ Please include the following with your bug reports: screenshot, LilyPond snippet
 
 ### Acknowledgement
 
-The list of keywords used in SubLilyPond was extracted from Heikki Junes's syntax definition for vim, which comes [bundled](http://lilypond.org/doc/v2.12/Documentation/user/lilypond-program/Vim-mode) with LilyPond.
+The list of keywords in the first release of SubLilyPond was an extended version of Heikki Junes's syntax definition for vim, which comes [bundled](http://lilypond.org/doc/v2.12/Documentation/user/lilypond-program/Vim-mode) with LilyPond.
 
 Copyright © 2013 by [Yannis Rammos](http://www.twitter.com/yannisrammos). This work is made available under the terms of the Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) license, <http://creativecommons.org/licenses/by-sa/3.0/>.
