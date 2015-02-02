@@ -1,4 +1,5 @@
 {   "name": "(LilyPond note mode)",
+    "hidden": true,
     "scopeName": "source.lilypond-notemode",
     "patterns": [
         {"include": "source.lilypond-notedrum"},
@@ -10,7 +11,7 @@
                                     "1":    {"name": "entity.other.lilypond"}
                                 },
             "endCaptures":      {
-                                    "1":    {"name": "entity.other.lilypond"} 
+                                    "1":    {"name": "entity.other.lilypond"}
                                 },
             "patterns": [
                                 {"include": "$self"}

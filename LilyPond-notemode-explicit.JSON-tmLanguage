@@ -1,4 +1,5 @@
 { "name": "(LilyPond explicit notemode)",
+  "hidden": true,
   "scopeName": "source.lilypond-notemode-explicit",
   "patterns": [
                 {
@@ -21,7 +22,7 @@
                                             {"include": "source.lilypond-lyricsmode"},
                                             {"include": "source.lilypond-notemode-explicit"},
                                             {"include": "source.lilypond-markupmode"},
-                                            {"include": "source.lilypond-figbassmode"},                    
+                                            {"include": "source.lilypond-figbassmode"},
                                             {"include": "source.lilypond-schememode"}
                                         ]
                 }

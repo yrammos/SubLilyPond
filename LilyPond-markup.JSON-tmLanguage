@@ -1,4 +1,5 @@
 { "name": "(LilyPond markup mode)",
+  "hidden": true,
   "scopeName": "source.lilypond-markupmode",
   "patterns": [
                     {

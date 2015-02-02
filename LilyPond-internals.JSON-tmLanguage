@@ -1,4 +1,5 @@
 { "name": "(LilyPond internals)",
+  "hidden": true,
   "scopeName": "source.lilypond-internals",
   "patterns": [
         {

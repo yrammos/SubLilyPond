@@ -1,4 +1,5 @@
 { "name": "(LilyPond note names)",
+  "hidden": true,
   "scopeName": "source.lilypond-notenames",
   "patterns":   [
                     {

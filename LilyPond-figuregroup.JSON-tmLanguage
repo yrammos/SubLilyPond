@@ -1,4 +1,5 @@
 {   "name": "(LilyPond figure group)",
+    "hidden": true,
     "scopeName": "source.lilypond-figuregroup",
     "patterns":     [
                         {
@@ -10,9 +11,9 @@
                                              },
                             "endCaptures":   {
                                                 "1":    {"name": "constant.numeric.fbgroupclose.lilypond"},
-                                                "2":    {"name": "constant.numeric.fbgroupclose.lilypond"}                                                
+                                                "2":    {"name": "constant.numeric.fbgroupclose.lilypond"}
                                              },
-                            "patterns":      [                                         
+                            "patterns":      [
                                                 {"include": "source.lilypond-markupmode"},
                                                 {"include": "#group"},
                                                 {"include": "#figure"},

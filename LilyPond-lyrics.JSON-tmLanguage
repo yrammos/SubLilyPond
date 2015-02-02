@@ -1,4 +1,5 @@
 { "name": "(LilyPond lyrics scopes)",
+  "hidden": true,
   "scopeName": "source.lilypond-lyricsmode",
   "patterns":   [
                     {
@@ -27,7 +28,7 @@
                                                 {"include": "#melisma"},
                                                 {"include": "#elision"},
                                                 {"include": "source.lilypond-internals"},
-                                                {"include": "$self"},                                            
+                                                {"include": "$self"},
                                                 {"include": "source.lilypond-markupmode"},
                                                 {"include": "source.lilypond-schememode"}
                                             ]
@@ -47,7 +48,7 @@
                                                 {"include": "#melisma"},
                                                 {"include": "#elision"},
                                                 {"include": "source.lilypond-internals"},
-                                                {"include": "$self"},                                 
+                                                {"include": "$self"},
                                                 {"include": "source.lilypond-markupmode"},
                                                 {"include": "source.lilypond-schememode"}
                                             ]

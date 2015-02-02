@@ -1,4 +1,5 @@
 { "name": "(LilyPond Scheme mode)",
+  "hidden": true,
   "scopeName": "source.lilypond-schememode",
   "patterns":        [
                         {
@@ -38,7 +39,7 @@
                                                         {"include": "#scheme"},
                                                         {"include": "source.lisp"}
                                                     ]
-                                    } 
-                    },                
+                                    }
+                    },
   "uuid": "a3492901-192a-4241-bbc6-eb49696bef83"
 }
